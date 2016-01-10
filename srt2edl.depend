@@ -1,0 +1,134 @@
+# depslib dependency file v1.0
+1440947974 source:/home/mch/Dropbox/CPP/srtextract/main.cpp
+	<iostream>
+	<vector>
+	<fstream>
+	"block.h"
+	<iostream>
+	<vector>
+	<fstream>
+	<sstream>
+	"block.h"
+	"edlexport.h"
+	"timecode.h"
+
+1440713334 
+
+1440930192 source:/home/mch/Dropbox/CPP/srtextract/src/block.cpp
+	"block.h"
+	"block.h"
+
+1440930545 /home/mch/Dropbox/CPP/srtextract/include/block.h
+	<iostream>
+	<iostream>
+	<sstream>
+	<string>
+
+1440714430 source:/home/mch/Dropbox/CPP/srtextract/src/subtitle.cpp
+	"subtitle.h"
+
+1440936575 h"
+
+1440714581 /home/mch/Dropbox/CPP/srtextract/include/subtitle.h
+
+1440947974 source:c:\users\mateu\dropbox\cpp\srtextract\main.cpp
+	<iostream>
+	<vector>
+	<fstream>
+	<sstream>
+	"block.h"
+	"edlexport.h"
+	"timecode.h"
+
+1440930545 c:\users\mateu\dropbox\cpp\srtextract\include\block.h
+	<iostream>
+	<sstream>
+	<string>
+
+1440930192 source:c:\users\mateu\dropbox\cpp\srtextract\src\block.cpp
+	"block.h"
+
+1440718030 source:c:\users\mateu\dropbox\cpp\srtextract\src\subtitle.cpp
+	"subtitle.h"
+
+1440718181 c:\users\mateu\dropbox\cpp\srtextract\include\subtitle.h
+
+1440935197 source:c:\users\mateu\dropbox\cpp\srtextract\src\edlexport.cpp
+	"edlexport.h"
+
+1440938797 .h"
+
+1440928730 c:\users\mateu\dropbox\cpp\srtextract\include\edlexport.h
+	<iostream>
+	<sstream>
+	<string>
+	<fstream>
+	<cmath>
+	<vector>
+	"block.h"
+	"timecode.h"
+
+1440932975 source:c:\users\mateu\dropbox\cpp\srtextract\src\timecode.cpp
+	"timecode.h"
+
+1441372760 c:\users\mateu\dropbox\cpp\srtextract\include\timecode.h
+	<iostream>
+	"block.h"
+
+1440928730 /home/mch/Dropbox/CPP/srtextract/include/edlexport.h
+	<iostream>
+	<sstream>
+	<string>
+	<fstream>
+	<cmath>
+	<vector>
+	"block.h"
+	"timecode.h"
+
+1441372760 /home/mch/Dropbox/CPP/srtextract/include/timecode.h
+	<iostream>
+	"block.h"
+
+1440935197 source:/home/mch/Dropbox/CPP/srtextract/src/edlexport.cpp
+	"edlexport.h"
+
+1440932975 source:/home/mch/Dropbox/CPP/srtextract/src/timecode.cpp
+	"timecode.h"
+
+1452383563 source:c:\users\mateu\dropbox\cpp\srt2edl\src\block.cpp
+	"block.h"
+
+1452383563 c:\users\mateu\dropbox\cpp\srt2edl\include\block.h
+	<iostream>
+	<sstream>
+	<string>
+
+1452383563 source:c:\users\mateu\dropbox\cpp\srt2edl\src\edlexport.cpp
+	"edlexport.h"
+
+1452383563 c:\users\mateu\dropbox\cpp\srt2edl\include\edlexport.h
+	<iostream>
+	<sstream>
+	<string>
+	<fstream>
+	<cmath>
+	<vector>
+	"block.h"
+	"timecode.h"
+
+1452383563 c:\users\mateu\dropbox\cpp\srt2edl\include\timecode.h
+	<iostream>
+	"block.h"
+
+1452383563 source:c:\users\mateu\dropbox\cpp\srt2edl\src\timecode.cpp
+	"timecode.h"
+
+1452383563 source:c:\users\mateu\dropbox\cpp\srt2edl\main.cpp
+	<iostream>
+	<vector>
+	<fstream>
+	<sstream>
+	"block.h"
+	"edlexport.h"
+	"timecode.h"
+

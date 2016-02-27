@@ -12,7 +12,7 @@ want to extract every line which has the word 'F**k' (a very common word in the 
   3. Look up the framerate of the associated video file and note it down.
   4. Make a list of words to find. The search is case sensitive, so make case combinations like 'word', 'WORD', 'Word'.
 
-Once you've done the above steps, run the executable 'srt2edl.exe' with theese arguments:
+Once you've done the above steps, run the executable 'srt2edl.exe' with these arguments:
   ```
   srt2edl.exe <Filename.SRT> -f <FrameRate> -w <"word WORD Word">
   ```

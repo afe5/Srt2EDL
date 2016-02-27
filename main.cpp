@@ -79,7 +79,7 @@ void setup(vector<string>& _wordsToFind, float& _framerate, string& _filename)
 
 }
 
-int main()
+int main(int argc, char* argv[])
 {
     vector<string> wordsToFind;
     float framerate;

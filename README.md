@@ -2,7 +2,7 @@
 Finds specific strings in subtitle files (SRT) and exports them into an EDL file.
 
 This program made in C++ goes through a SRT file and looks for specified text strings. Then, these are exported
-into an EDL file (plain text) for later editing in Adobe Premiere (tested, working) or any NLE software.
+into an EDL file (plain text) for later editing in Adobe Premiere (tested and working) or any other NLE software.
 
 In the included example ('sample' folder) we use a subtitle file from the TV series 'Sillicon Valley', where we
 want to extract every line which has the word 'F**k' (a very common word in the series). So we need to:

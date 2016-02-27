@@ -46,7 +46,7 @@ vector<string> FillVecSubfile(fstream& f) //Fills a vector with the entire SRT s
     return ret;
 }
 
-vector<string> WordsToVectorString(string& _tempLine)
+vector<string> WordsToVectorString(string _tempLine)
 {
     vector<string> ret;
     stringstream stream(_tempLine);
@@ -59,24 +59,22 @@ vector<string> WordsToVectorString(string& _tempLine)
     return ret;
 }
 
-void setup(vector<string>& _wordsToFind, float& _framerate, string& _filename)
+bool IsASrtFile(string s)
 {
-    cout << "SRT2EDL: Setting everything up" << endl
-         << "------------------------------" << endl;
+    return (s.substr( s.size()-4 ) == ".srt" || s.substr( s.size()-4 ) == ".SRT");
+}
 
-    cout << "[1/3] SRT filename? (example: Friends_S02E01.SRT) > ";
-    getline(cin, _filename);
+void show_usage(string name) {
+    cerr << "Usage: " << endl
+         << name << " <Filename.SRT> -f <FrameRate> -w <" << '"' << "word WORD Word" << '"' << ">" << endl;
+}
 
-    cout << "[2/3] Specify video framerate (example: 24.00 / 23.976 / 25.00 / ...) > ";
-    cin >> _framerate;
-
-    cout << "[3/3] Specify words to find, separated by spaces (Search is case sensitive!) > ";
-
-    string tempLine;
-    cin.ignore(1000, '\n');
-    getline(cin, tempLine);
-    _wordsToFind = WordsToVectorString(tempLine);
-
+float char_to_float(char* fr_char)
+{
+    stringstream s(fr_char);
+    float ret;
+    s >> ret;
+    return ret;
 }
 
 int main(int argc, char* argv[])
@@ -85,7 +83,29 @@ int main(int argc, char* argv[])
     float framerate;
     string filename;
 
-    setup(wordsToFind, framerate, filename);
+    if(argc != 6){
+        show_usage(argv[0]);
+        return 1;
+    }else{
+        if( IsASrtFile(argv[1]) ) {
+            filename = argv[1];
+        } else {
+            cerr << "Error: Infile must be a SRT file!" << endl;
+            return 1;
+        }
+    }
+
+    for(int i = 2; i < argc; i++)
+    {
+        string arg = argv[i];
+
+        if (arg == "-f") {
+            framerate = char_to_float(argv[i+1]);
+        }
+        else if (arg == "-w") {
+            wordsToFind = WordsToVectorString(argv[i+1]);
+        }
+    }
 
     fstream Fin(filename.c_str());
 

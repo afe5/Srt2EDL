@@ -35,7 +35,6 @@ bool LineIsTime(string& s) // Checks whether a line is a Time Line or a String L
 
 vector<string> FillVecSubfile(fstream& f) //Fills a vector with the entire SRT subtitle file.
 {                                         //Every new line will be a cell of the vector.
-    cout << "Filling vector with file..." << endl;
     vector<string> ret;
     string line;
     while(!f.eof())

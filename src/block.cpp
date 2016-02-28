@@ -60,7 +60,7 @@ block::block(int c, string t, string s, float fr)
     timeOut = timeOutFromStr(t, fr);
     framer = fr;
 
-    cout << "### BLOCK CREATED" << endl
+    cout << "\n### BLOCK CREATED" << endl
          << "# cnt = " << cnt << endl
          << "# subt = " << subt << endl
          << "# time = " << t << endl
@@ -71,7 +71,7 @@ block::block(int c, string t, string s, float fr)
 
 void block::display() // Debug purposes
 {
-    cout << "### DISPLAY() block n." << cnt << endl
+    cout << "\n### DISPLAY() block n." << cnt << endl
          << "# framerate: " << framer << endl
          << "# subt: " << subt << endl
          << "# timeIn: " << timeIn << endl
